@@ -1,0 +1,31 @@
+<!--
+  Mock: https://www.figma.com/file/ABYYHdNUhkRkuKFHP6J1O8/FEND-Interview?node-id=0%3A1
+  Bootstrap is available to be used if needed.
+-->
+
+<div id="user-container" class="container">
+  <div class="row">
+    <div class="col col-md-4 col-lg-2">
+      <button id="getUser" class="btn btn-primary btn-block" (click)="getUsers()">Get Users</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div *ngFor="let user of users" class="col-lg col-md-4 col-sm-12 card mx-2 rounded-0 shadow-sm p-3 mb-5 bg-white">
+      <div class="card-body">
+        <h4 class="card-title">{{user.name}}</h4>
+        <p>
+          <b>Email: </b><span class="text-primary">{{user.email}}</span>
+        </p>
+        <!-- If a User has the "confirmed" property, display "created_at" formatted in
+       "MM/DD/YYYY" using the Date pipe, otherwise show "unconfirmed." -->
+
+        <p>
+          <b>Joined: </b><span *ngIf="user?.confirmed; else default_content">{{user.created_at | date: 'MM/dd/YYYY'}}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #default_content><span class="text-danger">unconfirmed</span></ng-template>

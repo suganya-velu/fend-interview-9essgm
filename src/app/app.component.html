@@ -1,0 +1,32 @@
+<!--
+  *** BEFORE STARTING: FORK this branch so progress is NOT LOST if the window is accidentally closed. ***
+
+  Review the following:
+  - Mock: https://www.figma.com/file/ABYYHdNUhkRkuKFHP6J1O8/FEND-Interview?node-id=0%3A1 /assets/users.json
+  - Users: /assets/users.json
+
+  Functionality:
+  ------------------
+  # user.ts (START HERE)
+  1. Write an interface for the User object, where "confirmed" is optional.
+
+  # user.component.ts
+  2. Allow getUsers() to populate the users variable, and makes them available to the view.
+
+  # user.component.html:
+  3. Make the "Get Users" button call getUsers().
+  4. Display the user information as outlined in the mock. 
+  5. If a User has the "confirmed" property, display "created_at" formatted in
+  "MM/DD/YYYY" using the Date pipe, otherwise show "unconfirmed."
+
+  Testing:
+  ------------------
+  Note: to run jasmine tests, in angular.json:19 you must change "main": "src/main.ts" to "main": "src/main-testing.ts", save, and perform a full page reload.
+  6. Write tests to verify expectations of the UserService.
+  7. Write tests to verify expectations of the UserComponent.
+
+  # BONUS:
+  8. Customize the code and/or layout in any way that you feel
+-->
+
+<app-user></app-user>

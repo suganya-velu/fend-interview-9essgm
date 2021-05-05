@@ -1,0 +1,29 @@
+[
+  {
+    "id": "u_8nB75i9",
+    "name": "John Placeholder",
+    "email": "john.placeholder@fakemail.com",
+    "created_at": "2021-03-16T19:38:45.850Z",
+    "confirmed": true
+  },
+  {
+    "id": "u_5bB95j0",
+    "name": "Mary Placeholder",
+    "email": "mary.placeholder@fakemail.com",
+    "created_at": "2021-04-16T19:38:45.850Z",
+    "confirmed": true
+  },
+  {
+    "id": "u_9bB95j0",
+    "name": "Fred Placeholder",
+    "email": "fred.placeholder@fakemail.com",
+    "created_at": "2021-05-16T19:38:45.850Z",
+    "confirmed": true
+  },
+  {
+    "id": "u_00B95z0",
+    "name": "Matt Placeholder",
+    "email": "matt.placeholder@fakemail.com",
+    "created_at": "2021-06-16T19:38:45.850Z"
+  }
+]
